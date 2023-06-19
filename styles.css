@@ -11,6 +11,14 @@ header {
   padding: 20px;
 }
 
+main {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
 .custom-btn {
   font-size: 15px;
   padding: 30px;
@@ -33,6 +41,16 @@ header {
   border: none;
 }
 
+.alink {
+  text-decoration: none;
+}
+
+.alink:hover {
+  text-decoration: underline;
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+}
+
 a {
   text-decoration: none;
 }
@@ -44,8 +62,6 @@ a {
 .custom-btn:visited {
   color: #fff;
 }
-
-
 
 a:hover {
   color:rgb(145, 181, 248);
@@ -69,6 +85,7 @@ nav li {
   padding: 15px;
 }
 
+/*
 nav li a {
   color: #333;
   text-decoration: none;
@@ -77,12 +94,8 @@ nav li a {
   border-radius: 5px;
   background-color: #fff;
   margin: 20px;
-  
 }
-
-main {
-  padding: 20px;
-}
+*/
 
 section {
   margin-bottom: 20px;
@@ -99,4 +112,27 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+}
+
+img {
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.img-css {
+  height: 200px;
+}
+
+.quote {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #333
+}
+
+.img-block {
+  display: flex;
+}
+
+li {
+  line-height: 24px;
 }

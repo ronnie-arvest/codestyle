@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Code Style CSS</title>
+</head>
+
+<body>
+  <article>
+    <h1>Code Style CSS</h1>
+    <nav>
+      <ul>
+        <li><a class="alink" href="/codestylehtml.html">Code Style HTML</a></li>
+        <li><a class="alink" href="/codestylecss.html">Code Style CSS</a></li>
+      </ul>
+    </nav>
+    <section>
+      <p>Хороший код — это код который удобно читать и поддерживать.</p>
+      <p>Хороший код должен быть простым:</p>
+      <ul>
+        <li>используйте легко читаемые селекторы и говорящие классы. По ним сразу можно понять к чему применяются стили.</li>
+        <li>классы пишите в нижнем регистре (строчными буквами).</li>
+        <li>вместо пробела в классах используйте знак «дефис». Старайтесь не использовать нижнее подчеркивание и camelCase.</li>
+        <li>код должен быть в одном стиле: везде используется один порядок свойств, одинаковые отступы и пробелы, один стиль записи цветов и псевдоэлементов.</li>
+      </ul>
+    </section>
+    <section class="img-block">
+      <figure>
+        <img class="img-css" src="/img/bad.png" alt="Плохо">
+        <figcaption>Плохо</figcaption>
+      </figure>
+      <figure>
+        <img class="img-css" src="/img/good.png" alt="Хорошо">
+        <figcaption>Хорошо</figcaption>
+      </figure>
+    </section>
+    <section>
+      <p>Оформляем блок со свойствами:</p>
+      <ul>
+        <li>после селектора, перед открывающей блок «фигурной скобкой» ставьте «пробел».</li>
+        <li>в начале строки перед свойствами ставится «два пробела». Это самый популярный вариант.</li>
+        <li>после двоеточия ставьте «пробел».</li>
+        <li>обязательно ставить «точку с запятой» в конце свойства.</li>
+        <li>ставьте закрывающую «фигурную скобку» на новой строке.</li>
+      </ul>
+    </section>
+    <section>
+      <p>Между набором правил оставляйте одну пустую строку:</p>
+      <img src="/img/3.png" alt="Между набором правил оставляйте одну пустую строку">
+      <p>Все стили пишем через селектор класса. Теги используем только для глобальных стилей, <b>id</b> в стилях не используем.</p>
+      <p>Избегайте использование <b>!important.</b></p>
+      <p>Псевдокласс <b>nth-child</b> используем только со значениями <b>even</b> и <b>odd.</b> В остальных случая используем дополнительный класс.
+      </p>
+      <p>Сохраняйте уровень вложенности не более двух элементов, если не используем БЭМ. Плохо: .block .faq .title Хорошо: .faq .title</p>
+      <p>При использовании БЭМ вложенность не используется.</p>
+      <p>Обязательно указывайте альтернативный вид и тип семейства шрифтов.</p>
+      <p>Проверяйте вёрстку на переполнение.</p>
+      <p>У интерактивных элементов обязательны стили состояний: <b>hover, focus, active, disabled. </b></p>
+      <p>Если используете свойство <b>display: inline-block</b>, обязательно добавляйте свойство <b>vertical-align.</b></p>
+      <p>Свойство <b>position</b> используем в крайнем случае. Исключение: если иначе сделать невозможно или сложно.</p>
+      <p>У нулевых значений не нужно писать единицы измерения. Когда значение <b>0</b>, то не важно это px, % или попугайчики.</p>
+      <p>Значения цвета <b>hex</b> пишем в нижнем регистре.</p>
+      <p>Проверяйте css в валидаторе — <a class="alink" href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a></p>
+    </section>
+    <section>
+      <h2>Дополнительно</h2>
+      <p>В названиях файлов и папок используйте только латиницу и буквы в нижнем регистре, без пробелов. Для разделения слов используйте «дефис» или нижние подчёркивание.
+      </p>
+    </section>
+  </article>
+</body>
+
+</html>
